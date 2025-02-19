@@ -2,12 +2,29 @@
 
 This guide will help you install and run a 0G node. Follow these steps carefully to ensure proper installation.
 
+## Prerequisites
+
+### Get Test Tokens (Required)
+
+Before running the node, you need to get test tokens:
+
+1. Join the 0G Labs Discord server: https://discord.gg/0glabs
+2. Go to the `#faucet` channel
+3. Request tokens using the command:
+   ```
+   /faucet your_wallet_address
+   ```
+   Replace `your_wallet_address` with your actual wallet address
+
+⚠️ **Important**: Make sure you have received the test tokens before proceeding with node installation.
+
 ## System Requirements
 
 - Operating System: Ubuntu 20.04 or higher
-- RAM: 4GB minimum
-- Storage: 50GB minimum
+- RAM: 8GB minimum
+- CPU: 2 Core
 - Root access or sudo privileges
+- Test tokens from the 0G faucet (see Prerequisites)
 
 ## Quick Installation
 
@@ -33,10 +50,10 @@ If you prefer to inspect the script before running it, you can:
 
 ```bash
 # Using curl
-curl -O https://github.com/WINGFO-HQ/0G/main/0G.sh
+curl -O https://raw.githubusercontent.com/WINGFO-HQ/0G/main/0G.sh
 
 # Or using wget
-wget https://github.com/WINGFO-HQ/0G/main/0G.sh
+wget https://raw.githubusercontent.com/WINGFO-HQ/0G/main/0G.sh
 ```
 
 2. Make it executable:
@@ -70,6 +87,7 @@ During installation, you will be prompted to enter your private key. Make sure t
 - Remove the '0x' prefix if present
 - Ensure it's a valid 64-character hexadecimal key
 - Keep your private key secure and never share it
+- Use the private key of the wallet that received the test tokens
 
 ## Post-Installation
 
@@ -115,6 +133,8 @@ docker ps -a | grep 0g-da-client
 docker logs 0g-da-client
 ```
 
+4. Check your test token balance on the Discord faucet channel
+
 ## Support
 
 For support, join our community:
@@ -128,6 +148,7 @@ For support, join our community:
 - Never share your private key
 - Use a dedicated private key for the node
 - Keep your system updated and secured
+- Ensure you have enough test tokens before running the node
 
 ## License
 
