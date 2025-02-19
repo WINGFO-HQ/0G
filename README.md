@@ -16,13 +16,13 @@ You can install the 0G node using either curl or wget. Choose one of the followi
 ### Using curl
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/WINGFO-HQ/WINGFO/main/0G.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/WINGFO-HQ/0G/main/0G.sh | sudo bash
 ```
 
 ### Using wget
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/WINGFO-HQ/WINGFO/main/0G.sh | sudo bash
+wget -qO- https://raw.githubusercontent.com/WINGFO-HQ/0G/main/0G.sh | sudo bash
 ```
 
 ## Manual Installation
@@ -33,10 +33,10 @@ If you prefer to inspect the script before running it, you can:
 
 ```bash
 # Using curl
-curl -O https://raw.githubusercontent.com/WINGFO-HQ/WINGFO/main/0G.sh
+curl -O https://github.com/WINGFO-HQ/0G/main/0G.sh
 
 # Or using wget
-wget https://raw.githubusercontent.com/WINGFO-HQ/WINGFO/main/0G.sh
+wget https://github.com/WINGFO-HQ/0G/main/0G.sh
 ```
 
 2. Make it executable:
